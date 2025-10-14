@@ -1,0 +1,10 @@
+.*/
+!.github/
+__pycache__/
+data*.json
+test.py
+logs.txt
+traceback.txt
+*.env
+*.bat
+*.bak
