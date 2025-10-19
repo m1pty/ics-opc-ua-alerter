@@ -1,6 +1,2 @@
-<<<<<<< HEAD
 asyncua~=1.1.8
-=======
-asyncua~=1.1.8
->>>>>>> f56b048 (Initial commit: OPC UA client/server + Suricata rules + Vagrant setup)
 loguru~=0.7.3
