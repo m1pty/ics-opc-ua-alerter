@@ -1,0 +1,29 @@
+%YAML 1.1
+---
+vars:
+  address-groups:
+    HOME_NET: "[192.168.60.0/24,10.0.2.0/24,127.0.0.0/8]"
+  port-groups:
+    OPCUA_PORTS: "4840"
+
+runmode: autofp
+
+default-log-dir: /opt/opcua-demo/logs
+
+outputs:
+  - eve-log:
+      enabled: yes
+      filetype: regular
+      filename: eve.json
+      types:
+        - alert
+
+af-packet:
+  - interface: lo
+    cluster-id: 99
+    cluster-type: cluster_flow
+    defrag: yes
+    threads: 1
+
+rule-files:
+  - /opt/opcua-demo/suricata/rules/opcua.rules
