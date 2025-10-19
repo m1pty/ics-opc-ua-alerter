@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# ics-opc-ua-alerter
-=======
 # Анализ промышленного протокола OPC UA
 
 #### Для запуска проекта через `Vagrant`:
@@ -75,4 +72,3 @@ tail -f ./logs/eve.json | jq 'select(.event_type == "alert")'
    python -m opcua.server
    python -m opcua.client
    ```
->>>>>>> f56b048 (Initial commit: OPC UA client/server + Suricata rules + Vagrant setup)
